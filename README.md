@@ -1,6 +1,5 @@
 # Tic-Tac-Toe
-🎮Tic-Tac-Toe
-A web-based browser Tic Tac Toe game built with HTML, CSS, and JavaScript.
+A web-based browser 🎮Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
 This project highlights front-end development skills such as layout design, DOM manipulation, and interactive game logic.
 ________________________________________
 🛠️ Tech Stack
