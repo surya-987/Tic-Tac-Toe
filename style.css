@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,255,255,0.3);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00fff0, 0 0 10px #00fff0;
+}
+
+.emoji {
+  font-size: 42px;
+  text-shadow: 0 0 10px #ff7f50, 0 0 20px #ff7f50;
+  vertical-align: middle;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #00fff0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
+
+.cell.taken {
+  cursor: not-allowed;
+}
+
+.cell[data-value="X"],
+.cell[data-value="O"] {
+  color: #ff7f50;
+  text-shadow: 0 0 10px #ff7f50, 0 0 20px #ff7f50;
+}
+
+.cell.winner {
+  background: #ffe066;
+  color: #000;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ff6333;
+  transform: scale(1.05);
+}
